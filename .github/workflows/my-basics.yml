@@ -9,11 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Print Hellow Message
+    - name: Print Hellow Message in Build
       run : echo "Hello World from Build job"
    
   deploy:
     runs-on: ubuntu-latest
+    needs: [build]
     steps:
-    - name: Print Hellow Message
+    - name: Print Hellow Message in Deploy
       run : echo "Hello World from Deploy job"
