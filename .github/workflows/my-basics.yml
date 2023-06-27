@@ -1,6 +1,6 @@
 name: My-GitHubActions-Basics 
 env:
-  APPLICATION_NAME    : "MyFlack"
+  APPLICATION_NAME    : "MyFlacK"
   DEPLOY_PACKAGE_NAME : "flack-deploy-ver-${{ github.sha }}"
 
 on:
