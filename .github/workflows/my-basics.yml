@@ -1,0 +1,19 @@
+name: My-GitHubActions-Basics 
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hellow Message
+      run : echo "Hello World from Build job"
+   
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hellow Message
+      run : echo "Hello World from Deploy job"
